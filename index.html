@@ -1,1 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <header>
+        <h1>🌱 Agrinho 2026</h1>
+        <p>Tecnologia e Sustentabilidade no Campo</p>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>🚜 Agricultura Inteligente</h2>
+            <p>
+                A tecnologia ajuda os agricultores a produzir mais alimentos,
+                economizar água e cuidar do meio ambiente.
+            </p>
+
+            <button onclick="mostrarMensagem()">
+                Clique para ver uma dica sustentável
+            </button>
+
+            <p id="mensagem"></p>
+        </section>
+
+        <section class="imagem">
+            <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1200&auto=format&fit=crop" alt="Plantação">
+        </section>
+    </main>
+
+    <footer>
+        <p>Projeto desenvolvido para o Agrinho 2026 💚</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+style.css
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0fff0;
+    color: #333;
+}
+
+header {
+    background-color: #2e8b57;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+button {
+    background-color: #228b22;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #006400;
+}
+
+.imagem img {
+    margin-top: 20px;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 15px;
+}
+
+footer {
+    background-color: #2e8b57;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+script.js
+function mostrarMensagem() {
+    const mensagem = document.getElementById("mensagem");
+
+    mensagem.innerHTML =
+        "💧 Dica: Economizar água e usar tecnologia ajuda a preservar a natureza!";
+}
